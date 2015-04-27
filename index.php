@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 include_once("./class/Geral.class.php");
 $geral = new Geral();
@@ -109,3 +110,6 @@ $geral = new Geral();
 	
   </body>
 </html>
+=======
+
+>>>>>>> 2b1ef551391ab76816b8fc26bafc7580bd879ee1
