@@ -8,10 +8,13 @@ $geral = new Geral();
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projeto de interfaces para web - Atividade Aberta 05</title>
+    <title>Projeto de interfaces para web - Nas Nuvens - Atividade Aberta 05</title>
 	<style>
 		body {
 			padding-bottom: 10px;
+		}
+		.member {
+			padding: 10px;
 		}
 	</style>
     <!-- Bootstrap -->
@@ -88,7 +91,7 @@ $geral = new Geral();
 						else
 							$foto = "./imagens/fotoPerfilPadrao.jpg";
 						echo "<a href='profile.php?user=".$participante['login']."'>";
-						echo "<figure ><img src=\"imagemAlbum.php?img=$foto\" alt='".$participante['login']."' />";
+						echo "<figure class='member' ><img src=\"imagemAlbum.php?img=$foto\" alt='".$participante['login']."' />";
 						echo "<figcaption>".$participante['nomeCompleto']."</figcaption></figure></a>";
 						echo "</div>";
 					}

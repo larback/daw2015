@@ -22,6 +22,7 @@ class Geral {
 			$st->execute(array($login));
 			return $st->fetch();
 		} catch(PDOException $i) {
+			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return null;
 		}
 	}
@@ -32,6 +33,7 @@ class Geral {
 			$st->execute(array($exceto));
 			return $st->fetchAll();
 		} catch(PDOException $i) {
+			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return null;
 		}
 	}
@@ -47,6 +49,7 @@ class Geral {
 				return false;
 			}
 		} catch(PDOException $i) {
+			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return null;
 		}
 	}
@@ -57,6 +60,7 @@ class Geral {
 			$st->execute();
 			return $st->fetchAll();
 		} catch(PDOException $i) {
+			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return null;
 		}
 	}
@@ -67,6 +71,7 @@ class Geral {
 			$st->execute();
 			return $st->fetchAll();
 		} catch(PDOException $i) {
+			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return null;
 		}
 	}
@@ -78,6 +83,7 @@ class Geral {
 			$st->execute();
 			return $st->fetchAll();
 		} catch(PDOException $i) {
+			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return null;
 		}
 	}
@@ -90,6 +96,7 @@ class Geral {
 			$rs = $st->fetch();
 			return utf8_encode($rs['nomeCidade']) . " - " . $rs['sigaEstado'];
 		} catch(PDOException $i) {
+			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return null;
 		}
 	}
@@ -101,6 +108,7 @@ class Geral {
 			$rs = $st->fetch();
 			return $rs['idEstado'];
 		} catch(PDOException $i) {
+			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return null;
 		}
 	}
@@ -126,6 +134,7 @@ class Geral {
 			else
 				return true;
 		} catch(PDOException $i) {
+			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return false;
 		}
 	}
@@ -153,6 +162,7 @@ class Geral {
 			else
 				return true;
 		} catch(PDOException $i) {
+			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return false;
 		}
 	}
@@ -162,6 +172,7 @@ class Geral {
 			$st = $con->prepare("update participantes set arquivoFoto=? where login=?");
 			$st->execute(array($pathCompleto,$login));
 		} catch(PDOException $i) {
+			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return false;
 		}
 	}
@@ -194,6 +205,7 @@ class Geral {
 				return false;
 			}
 		} catch(PDOException $i) {
+			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return false;
 		}
 	}

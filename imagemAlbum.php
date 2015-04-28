@@ -11,7 +11,7 @@ list($width, $height) = getimagesize($filename);
 #setando a largura da miniatura
 $new_width = 240;
 #setando a altura da miniatura
-$new_height = 240;
+$new_height = 320;
 
 #gerando a a miniatura da imagem
 $image_p = imagecreatetruecolor($new_width, $new_height);
