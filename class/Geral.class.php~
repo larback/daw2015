@@ -1,8 +1,8 @@
 <?php
 class Geral {
-	const USUARIO = 'baff934a17beef';
-	const SENHA = 'cb785761';
-	const BANCO = 'formandos2015';
+	const USUARIO = 'b78f11f7da65be';
+	const SENHA = 'c0664186';
+	const BANCO = 'DAW2015';
 	const PORTA = '3306'; 
 	const HOST = 'br-cdbr-azure-south-a.cloudapp.net';
 	public function conexao() {
