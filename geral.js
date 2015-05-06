@@ -2,8 +2,8 @@ function pesquisar(){
 	window.location.href='principal.php?q='+document.getElementById("fNome").value;
 }
 function carregarCidades(){
-	document.forms[1].action = 'cadastro.php';
-	document.forms[1].submit();
+	document.forms[0].action = 'cadastro.php';
+	document.forms[0].submit();
 }
 
 function carregarCidadesU() {
@@ -38,6 +38,6 @@ function novoUsuario() {
 		return false;
 	}
 
-	document.forms[1].action = 'novoUsuario.php';
-	document.forms[1].submit();
+	document.forms[0].action = 'novoUsuario.php';
+	document.forms[0].submit();
 }

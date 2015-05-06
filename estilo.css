@@ -1,0 +1,237 @@
+body{
+    margin-top: 0px;
+}
+    #cabecalho {
+		background-image: url("./imagens/header.jpg");
+		background-repeat:no-repeat;
+		background-color:#000;
+        text-align : center;
+        min-width : 50em;
+        width: 99%;
+		
+        top:0;
+        z-index: 2;
+    }
+    #cabecalho h1 {
+		color:#FFF;
+		font-size:1.0em;
+	}
+    #cabecalho #cadastro{
+		color: #FFF;
+        font-size: 0.8em;
+        font-weight: 100;
+        text-align: right;
+    }
+    #corpo {
+    text-align : left;
+    font-family : verdana, sans-serif, serif;
+    }
+
+div.inicio_mensagem{
+        margin: 0;
+        display: inline-block;
+        width: 30em;
+        text-align: justify;
+        padding-right: 10px;
+        
+    }
+    div.inicio_login{
+		vertical-align: top;
+		display: inline-block;
+		
+	}
+	.labelLogin {
+            display:inline-block;
+            width:100px;
+            text-align:right;
+        }
+	.btLogin {
+			padding-left:50px;
+        }
+    #manter{
+            padding-left: 50px;
+    }
+	.fieldsetLogin {
+            width:410px;
+            margin: 0 auto;
+            border: 0;
+        }
+    .textoMedio {
+		width: 20em;
+		}
+    div.moldura {
+    display : inline-block;
+    border-radius : 0.5em;
+    background-color : #eee;
+    margin-bottom : 0.5em;
+    box-shadow : 2px 2px 2px #aaa;
+    vertical-align : top;
+    }
+    img.foto {
+    height : 320px;
+    width : 240px;
+    box-shadow : 5px 5px 10px #444;
+    border-radius : 1em 1em;
+    padding-bottom : 1em;
+    opacity : 0.85000002384185791015625;
+    }
+    img:hover {
+    opacity : 1;
+    }
+    a.discreto {
+		color:#fff;
+    }
+    a.discreto:hover{
+        color:#47EF92;
+        font-weight: normal;
+        text-decoration: underline;
+    }
+    a.menuProfile{
+        font-size: 0.6em;
+    }
+    a.menuProfile:hover{
+        color:#000;
+        font-weight: normal;
+        text-decoration: underline;
+    }
+    a {
+    text-decoration : none;
+    color : #444;
+    }
+    a:hover {
+    color : #000;
+    font-weight : bold;
+    }
+    footer#rodape {
+        font-family : verdana, cursive, serif;
+        font-size : 0.7em;
+        text-align : center;
+        font-style : italic;
+        width : 100%;
+        margin : 0 auto;
+        background-color : #ddd;
+        border-radius : 1em 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        position: relative;
+        top: 10px;
+    }
+    img#foto {
+    float : left;
+    height : 320px;
+    width : 240px;
+    padding-right : 1em;
+    border-radius : 2em;
+    }
+    nav#menu {
+    margin : 0 auto;
+    width : 5em;
+    background-color : #ddd;
+    border-radius : 10px;
+    text-align : center;
+    }
+    h3 {
+    line-height : 0;
+    }
+    p {
+    text-align : justify;
+    }
+    h3 + p {
+    margin-top : 0;
+    font-style : italic;
+    }
+    .centroSimples {
+		text-align:center;
+		margin: 0 auto;	
+	}
+    .labelCadastro{
+        display: inline-block;
+        width: 6em;
+    }
+    .divCadastro #descricao {
+        width: 37em;
+        height: 5em;
+    }
+    #estado, #cidade {
+        width: 30.5em;
+    }
+    input, file, select {
+        display: inline-block;
+        width: 30em;
+    }
+    .remember {
+        width:2em;
+    }
+    .miniaturas {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        padding: 1px;
+    }
+    #about {
+        display: inline-block;
+        float: left;
+        margin-right:0;
+        margin-left: 2em;
+    }
+    .album {
+        display: inline-block;
+    }
+    .fAlbum {
+        border-radius: 1em;
+    }
+    .profileImagem {
+        display: inline-block;
+        float: left;
+        padding: 0;
+    }
+    .avisoPequeno {
+        font-size: 0.6em;
+        color: #a00;
+        display: inline;
+    }
+    .thumb {
+        height: 75px;
+        border: 1px solid #000;
+        margin: 10px 5px 0 0;
+    }
+    #fTitulo{
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+    }
+    #fNome {
+        width: 220px;
+    }
+    .fCampos{
+        font-size: 0.8em;
+    }
+    #fButton {
+        float: right;
+    }
+    #menuP {
+        margin: 0 auto;
+        text-align: center;
+    }
+    #imagemP {
+        border-radius: 2em;
+    }
+     #cabecalhoPequeno {
+		background-color:#FFF;
+        text-align : center;
+        width: 99%;
+        position: fixed;
+        top:0;
+        z-index: 2;
+    }
+    #cabecalhoPequeno h1 {
+		color:#000;
+		font-size:1.0em;
+	}
+    #cabecalhoPequeno #cadastro{
+		color: #000;
+        font-size: 1.0em;
+        font-weight: 100;
+        text-align: right;
+    }

@@ -1,10 +1,10 @@
 <?php
 class Geral {
-	const USUARIO = 'baff934a17beef';
-	const SENHA = 'cb785761';
-	const BANCO = 'formandos2015';
+	const USUARIO = 'daw';
+	const SENHA = 'daw2014';
+	const BANCO = 'daw_yearbook';
 	const PORTA = '3306'; 
-	const HOST = 'br-cdbr-azure-south-a.cloudapp.net';
+	const HOST = 'localhost';
 	public function conexao() {
 		try {
 			$con = new PDO("mysql:host=".self::HOST.";port=".self::PORTA.";dbname=".self::BANCO, self::USUARIO, self::SENHA,  array(PDO::ATTR_PERSISTENT => true));
@@ -22,7 +22,6 @@ class Geral {
 			$st->execute(array($login));
 			return $st->fetch();
 		} catch(PDOException $i) {
-			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return null;
 		}
 	}
@@ -33,7 +32,6 @@ class Geral {
 			$st->execute(array($exceto));
 			return $st->fetchAll();
 		} catch(PDOException $i) {
-			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return null;
 		}
 	}
@@ -49,7 +47,6 @@ class Geral {
 				return false;
 			}
 		} catch(PDOException $i) {
-			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return null;
 		}
 	}
@@ -60,7 +57,6 @@ class Geral {
 			$st->execute();
 			return $st->fetchAll();
 		} catch(PDOException $i) {
-			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return null;
 		}
 	}
@@ -71,7 +67,6 @@ class Geral {
 			$st->execute();
 			return $st->fetchAll();
 		} catch(PDOException $i) {
-			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return null;
 		}
 	}
@@ -83,7 +78,6 @@ class Geral {
 			$st->execute();
 			return $st->fetchAll();
 		} catch(PDOException $i) {
-			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return null;
 		}
 	}
@@ -96,7 +90,6 @@ class Geral {
 			$rs = $st->fetch();
 			return utf8_encode($rs['nomeCidade']) . " - " . $rs['sigaEstado'];
 		} catch(PDOException $i) {
-			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return null;
 		}
 	}
@@ -108,7 +101,6 @@ class Geral {
 			$rs = $st->fetch();
 			return $rs['idEstado'];
 		} catch(PDOException $i) {
-			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return null;
 		}
 	}
@@ -134,7 +126,6 @@ class Geral {
 			else
 				return true;
 		} catch(PDOException $i) {
-			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return false;
 		}
 	}
@@ -162,7 +153,6 @@ class Geral {
 			else
 				return true;
 		} catch(PDOException $i) {
-			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return false;
 		}
 	}
@@ -172,7 +162,6 @@ class Geral {
 			$st = $con->prepare("update participantes set arquivoFoto=? where login=?");
 			$st->execute(array($pathCompleto,$login));
 		} catch(PDOException $i) {
-			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return false;
 		}
 	}
@@ -205,7 +194,6 @@ class Geral {
 				return false;
 			}
 		} catch(PDOException $i) {
-			print "Erro: <code>" . $i->getMessage() . "</code>";
 			return false;
 		}
 	}

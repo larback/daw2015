@@ -9,9 +9,9 @@ header('Content-type: image/jpeg');
 list($width, $height) = getimagesize($filename);
 
 #setando a largura da miniatura
-$new_width = 240;
+$new_width = 140;
 #setando a altura da miniatura
-$new_height = 240;
+$new_height = 140;
 
 #gerando a a miniatura da imagem
 $image_p = imagecreatetruecolor($new_width, $new_height);
