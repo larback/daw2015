@@ -63,7 +63,7 @@ include_once("includes.inc.php");
 		<textarea name="descricao" id="descricao"></textarea>
 	</div>
 	<div class="divCadastro">
-		<label for="foto" class="labelCadastro">Foto</label>
+		<label for="foto" class="labelCadastro">Foto (JPG)</label>
 		<input type="file" name="foto" id="foto" />
 	</div>
 	<div class="divCadastro" style="padding-left:100px;">
