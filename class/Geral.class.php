@@ -1,10 +1,10 @@
 <?php
 class Geral {
-	const USUARIO = 'daw';
-	const SENHA = 'daw2014';
-	const BANCO = 'daw_yearbook';
+	const USUARIO = 'baff934a17beef';
+	const SENHA = 'cb785761';
+	const BANCO = 'formandos2015';
 	const PORTA = '3306'; 
-	const HOST = 'localhost';
+	const HOST = 'br-cdbr-azure-south-a.cloudapp.net';
 	public function conexao() {
 		try {
 			$con = new PDO("mysql:host=".self::HOST.";port=".self::PORTA.";dbname=".self::BANCO, self::USUARIO, self::SENHA,  array(PDO::ATTR_PERSISTENT => true));
