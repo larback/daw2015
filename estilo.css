@@ -221,7 +221,6 @@ div.inicio_mensagem{
 		background-color:#FFF;
         text-align : center;
         width: 99%;
-        position: fixed;
         top:0;
         z-index: 2;
     }
