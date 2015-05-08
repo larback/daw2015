@@ -1,0 +1,162 @@
+commit e5f64b934c2b1cc9867c02bf810ca0b3f81a6a0a
+Author: larback <larbackfromhell@gmail.com>
+Date:   Thu May 7 21:28:03 2015 -0300
+
+    script para criacao do banco de dados
+
+ banco.sql | 106 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 106 insertions(+)
+
+commit db1c7257a0e02bf0626911fae13494c92524ad6c
+Author: larback <larbackfromhell@gmail.com>
+Date:   Wed May 6 15:09:05 2015 -0300
+
+    Alteracao layout
+
+ cadastro.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit a13798b64356f38652c3d032b4630746e5dbe4d6
+Author: larback <larbackfromhell@gmail.com>
+Date:   Wed May 6 15:04:38 2015 -0300
+
+    Atualização CSS
+
+ estilo.css | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 273948e21dbfeb9ba04e8ae23bf639bfda4c80fc
+Author: larback <larbackfromhell@gmail.com>
+Date:   Wed May 6 14:57:50 2015 -0300
+
+    correcao da conexao com mysql
+
+ class/Geral.class.php | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit 28ba0dfba82b8449641801f83a12134ddd6542ca
+Author: larback <larbackfromhell@gmail.com>
+Date:   Wed May 6 14:53:44 2015 -0300
+
+    Atualização de fontes
+
+ Canvas.php               | 1192 ++++++++++++++++++++++++++++++++++++++++++++++
+ alterarImagem.php        |   55 +++
+ cabecalho.php            |   56 +++
+ cadastro.php             |  156 ++----
+ class/Geral.class.php    |   20 +-
+ editarPerfil.php         |   85 ++++
+ estilo.css               |  237 +++++++++
+ geral.js                 |    8 +-
+ imagemAlbum.php          |    2 +-
+ imagemPerfil.php         |   24 +
+ imagens/header.jpg       |  Bin 0 -> 32084 bytes
+ imagens/logo_polimig.png |  Bin 0 -> 3797 bytes
+ includes.inc.php         |    8 +
+ index.php                |  170 +++----
+ logout.php               |   16 +
+ novoUsuario.php          |   92 +---
+ painel.php               |   32 ++
+ permissao.inc.php        |    7 +
+ principal.php            |   58 +++
+ profile.php              |  109 +----
+ registro.php             |   16 +
+ rodape.php               |   11 +
+ sAlterarImagem.php       |   38 ++
+ sEditarPerfil.php        |   16 +
+ 24 files changed, 1982 insertions(+), 426 deletions(-)
+
+commit 590d7d84e41cd5496a395dad2fb313827400fcfc
+Author: larback <larbackfromhell@gmail.com>
+Date:   Fri May 1 15:54:10 2015 -0300
+
+    Charset
+
+ profile.php~ | 99 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 99 insertions(+)
+
+commit bae5505a604846a413d482745c81b98e4409a0c5
+Author: larback <larbackfromhell@gmail.com>
+Date:   Fri May 1 14:58:40 2015 -0300
+
+    Alteração da conexão com mysql
+
+ class/Geral.class.php  |   6 +-
+ class/Geral.class.php~ | 213 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 216 insertions(+), 3 deletions(-)
+
+commit e794cd37ff316098348c0202b2694eb0ab429a45
+Author: larback <larbackfromhell@gmail.com>
+Date:   Tue Apr 28 13:56:07 2015 -0300
+
+    Alteracoes de layout
+
+ class/Geral.class.php |  12 ++++++++++++
+ imagemAlbum.php       |   2 +-
+ index.php             |   7 +++++--
+ profiles/a.jpg        | Bin 0 -> 49707 bytes
+ 4 files changed, 18 insertions(+), 3 deletions(-)
+
+commit ee43b9b0d4b52f72e5487960e55ef388f28fd720
+Author: larback <larbackfromhell@gmail.com>
+Date:   Mon Apr 27 16:51:51 2015 -0300
+
+    Atualizaçao da página inicial
+
+ index.php | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 08d755d8baf381dd379de82582aa3e1ed7b66a2e
+Merge: 2b50aee 2b1ef55
+Author: larback <larbackfromhell@gmail.com>
+Date:   Mon Apr 27 15:57:49 2015 -0300
+
+    Sistema
+
+commit 2b50aee0a56cd6fefe9a382b5868abb7bd7185ee
+Author: larback <larbackfromhell@gmail.com>
+Date:   Mon Apr 27 15:50:27 2015 -0300
+
+    Sistema
+
+ cadastro.php                 | 162 ++++++++++++++++++++++++++++++++++
+ class/Geral.class.php        | 201 +++++++++++++++++++++++++++++++++++++++++++
+ geral.js                     |  43 +++++++++
+ imagem.php                   |  31 +++++++
+ imagemAlbum.php              |  24 ++++++
+ imagens/fotoPerfilPadrao.jpg | Bin 0 -> 6636 bytes
+ imagens/pucminas_virtual.jpg | Bin 0 -> 19832 bytes
+ index.php                    | 111 ++++++++++++++++++++++++
+ novoUsuario.php              | 129 +++++++++++++++++++++++++++
+ profile.php                  |  99 +++++++++++++++++++++
+ profiles/.jpg                | Bin 0 -> 442568 bytes
+ profiles/larback.jpg         | Bin 0 -> 442568 bytes
+ profiles/maraka.jpg          | Bin 0 -> 61359 bytes
+ 13 files changed, 800 insertions(+)
+
+commit 2b1ef551391ab76816b8fc26bafc7580bd879ee1
+Author: larback <larbackfromhell@gmail.com>
+Date:   Sun Apr 26 22:36:38 2015 -0300
+
+    Envio inicial, apenas um teste
+
+ index.php | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit e48eb0829c9cdf5bd15e10f975fdf482f67e72ca
+Author: larback <larbackfromhell@gmail.com>
+Date:   Sun Apr 26 22:17:05 2015 -0300
+
+    Update README.md
+
+ README.md | 13 +++++--------
+ 1 file changed, 5 insertions(+), 8 deletions(-)
+
+commit 65c4398a9aeb1d11def0c58cb65bf58898036929
+Author: larback <larbackfromhell@gmail.com>
+Date:   Sun Apr 26 22:03:52 2015 -0300
+
+    Create README.md
+
+ README.md | 9 +++++++++
+ 1 file changed, 9 insertions(+)
